@@ -1,0 +1,53 @@
+/* Loading badge — floats above the selected text */
+#__claude-badge__ {
+  position: fixed;
+  z-index: 2147483647;
+  background: #3b82f6;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 12px;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+  animation: __claude-pulse__ 1.2s ease-in-out infinite;
+}
+
+@keyframes __claude-pulse__ {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+/* Toast notifications */
+.__claude-toast__ {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2147483647;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  pointer-events: none;
+  max-width: 320px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: __claude-fadein__ 0.2s ease;
+}
+
+.__claude-toast-info__ {
+  background: #1e40af;
+  color: #ffffff;
+}
+
+.__claude-toast-error__ {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+@keyframes __claude-fadein__ {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

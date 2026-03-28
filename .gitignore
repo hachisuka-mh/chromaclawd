@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.zip
+
+# Never commit secrets
+.env
+.env.*
+*.pem
+*secret*
+*credentials*
