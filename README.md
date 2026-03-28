@@ -41,14 +41,14 @@ You will see a toolbar appear with **Load unpacked**, **Pack extension**, and **
 ### Step 2 — Load the extension
 
 1. Click **Load unpacked**
-2. Navigate to and select the `chromaprompt` folder
-3. The extension appears in your list with the name **Claude Writing Improver**
+2. Navigate to and select the `chromaclawd` folder
+3. The extension appears in your list with the name **Chromaclawd**
 
-> **Tip:** Pin it to your toolbar by clicking the puzzle-piece icon in Chrome's top bar and clicking the pin next to Claude Writing Improver.
+> **Tip:** Pin it to your toolbar by clicking the puzzle-piece icon in Chrome's top bar and clicking the pin next to Chromaclawd.
 
 ### Step 3 — Add your API key
 
-1. Right-click the extension icon and choose **Options** — or go to `chrome://extensions`, find Claude Writing Improver, and click **Details → Extension options**
+1. Right-click the extension icon and choose **Options** — or go to `chrome://extensions`, find Chromaclawd, and click **Details → Extension options**
 2. Paste your Anthropic API key into the **Anthropic API Key** field
 3. Click **Save**
 
@@ -128,7 +128,7 @@ The **AIrbrush** mode is inspired by the Humanizer skill, a writing de-AI method
 ### Run tests
 
 ```bash
-cd chromaprompt
+cd chromaclawd
 npm install
 npm test
 ```
@@ -136,7 +136,7 @@ npm test
 ### Project structure
 
 ```
-chromaprompt/
+chromaclawd/
 ├── manifest.json        # MV3 manifest
 ├── background.js        # Service worker — menus, API calls
 ├── content.js           # Injected into pages — selection, replacement, UI
@@ -153,7 +153,7 @@ chromaprompt/
 
 After editing any file:
 1. Go to `chrome://extensions`
-2. Click the reload icon (↺) on the Claude Writing Improver card
+2. Click the reload icon (↺) on the Chromaclawd card
 3. Refresh any tabs where you want the updated content script
 
 ---
